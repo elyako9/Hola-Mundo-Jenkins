@@ -27,7 +27,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github_jtassi', url: 'git@github.com:calamza/holamundo.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'elyako9', url: 'git@github.com:elyako9/Hola-Mundo-Jenkins.git']]])
             }
         }
         stage('Build artifact'){
